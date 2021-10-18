@@ -5,9 +5,9 @@
 cat iplist.txt | while read ip
 
 do
-        echo " traceroute $ip -m10 " >> traceroute.txt
+        echo " traceroute $ip -I " >> traceroute.txt
         echo " " >> traceroute.txt
-        traceroute $ip -m10  >> traceroute.txt
+        traceroute $ip -I  >> traceroute.txt
 
 done
 ~                                   
